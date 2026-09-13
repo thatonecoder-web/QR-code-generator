@@ -1,8 +1,8 @@
-# QRForge
+# QR-generator
 
 A QR code generator built from scratch in Python.
 
-QRForge is a learning-focused implementation of the QR Code standard, built without relying on external QR-generation libraries. The goal is to understand how QR codes work internally, from data encoding and error correction to matrix construction and rendering.
+QR-generator is a learning-focused implementation of the QR Code standard, built without relying on external QR-generation libraries. The goal is to understand how QR codes work internally, from data encoding and error correction to matrix construction and rendering.
 
 ## 🚧 Status
 
@@ -42,10 +42,10 @@ Most QR-code libraries make generating a QR code as simple as calling one functi
 
 That's useful, but it doesn't explain what is actually happening underneath.
 
-QRForge is an attempt to build that process from the ground up and learn the algorithms, mathematics, and data structures involved along the way.
+QR-generator is an attempt to build that process from the ground up and learn the algorithms, mathematics, and data structures involved along the way.
 
 ## 🧪 Development
 
-QRForge is written in **Python** and developed incrementally using versioned releases.
+QR-generator is written in **Python** and developed incrementally using versioned releases.
 
-The project follows a test-driven approach where practical, with each major feature being verified
+The project follows a test-driven approach where practical, with each major feature being verified as development progresses.
