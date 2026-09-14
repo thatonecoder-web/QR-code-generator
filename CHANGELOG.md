@@ -1,5 +1,23 @@
 # Changelog
 
+## v0.1.1 — Basic QR Data Encoding
+
+├─ Added QR Code byte mode encoding
+
+├─ Added byte-mode indicator to encoded data
+
+├─ Added character count encoding
+
+├─ Added conversion of input bytes into QR-compatible bitstreams
+
+├─ Updated encoder tests for QR-specific bitstream output
+
+├─ Updated `examples/basic.py` to display the encoded bitstream and bit length
+
+├─ Updated package version to `0.1.1`
+
+└─ Updated project metadata and documentation for the new encoding layer
+
 ## v0.1.0 — Project Foundation
 
 ├─ Created initial `QR-generator` repository structure
@@ -21,4 +39,3 @@
 ├─ Added README documentation
 
 └─ Added MIT License
-
