@@ -9,7 +9,8 @@ def main() -> None:
     matrix = QRMatrix()
 
     print(f"Input: {data}")
-    print(f"Encoded: {encoded}")
+    print(f"Encoded bitstream: {encoded}")
+    print(f"Bit length: {len(encoded)}")
     print(f"Matrix size: {matrix.size}x{matrix.size}")
 
 
