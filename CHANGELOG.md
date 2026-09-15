@@ -1,5 +1,29 @@
 # Changelog
 
+## v0.1.3 - Error Correction
+├─ Added GF(256) arithmetic
+├─ Added Reed-Solomon error correction
+├─ Added generator polynomial construction
+├─ Added error-correction codeword generation
+├─ Added data/error-correction codeword interleaving
+├─ Added tests against known Reed-Solomon results
+└─ Updated package version to 0.1.3
+
+## v0.1.2 — QR Matrix & Data Placement
+
+├─ Added QR matrix initialization and sizing logic
+├─ Added QR version 1 matrix support (21×21)
+├─ Added reserved-module tracking
+├─ Added finder pattern generation
+├─ Added timing pattern generation
+├─ Added data-bit placement into the QR matrix
+├─ Added automatic placement direction and zig-zag traversal
+├─ Added matrix validation for occupied and reserved modules
+├─ Added unit tests for finder patterns, timing patterns, and data placement
+├─ Updated examples/basic.py to display the generated QR matrix
+├─ Updated package version to 0.1.2
+└─ Updated project documentation for QR matrix construction
+
 ## v0.1.1 — Basic QR Data Encoding
 
 ├─ Added QR Code byte mode encoding
