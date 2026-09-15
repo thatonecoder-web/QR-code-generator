@@ -1,3 +1,5 @@
+import pytest
+
 from qr_generator.matrix import QRMatrix
 
 
@@ -63,3 +65,43 @@ def test_reserving_does_not_change_value():
 
     assert matrix.get(5, 5) is True
     assert matrix.is_reserved(5, 5) is True
+
+
+def test_matrix_rejects_invalid_size():
+    with pytest.raises(ValueError):
+        QRMatrix(0)
+
+
+def test_matrix_rejects_negative_size():
+    with pytest.raises(ValueError):
+        QRMatrix(-1)
+
+
+def test_get_rejects_invalid_position():
+    matrix = QRMatrix()
+
+    with pytest.raises(IndexError):
+        matrix.get(21, 0)
+
+    with pytest.raises(IndexError):
+        matrix.get(0, 21)
+
+
+def test_set_rejects_invalid_position():
+    matrix = QRMatrix()
+
+    with pytest.raises(IndexError):
+        matrix.set(21, 0, True)
+
+    with pytest.raises(IndexError):
+        matrix.set(0, 21, True)
+
+
+def test_reserve_rejects_invalid_position():
+    matrix = QRMatrix()
+
+    with pytest.raises(IndexError):
+        matrix.reserve(21, 0)
+
+    with pytest.raises(IndexError):
+        matrix.reserve(0, 21)

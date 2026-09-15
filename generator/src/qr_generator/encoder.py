@@ -9,8 +9,8 @@ def encode(data: str) -> str:
     This implements the first stage of QR Code data encoding:
     byte mode, character count, and raw data bits.
 
-    Error correction, terminator bits, padding, and matrix
-    construction will be implemented in later versions.
+    Error correction, terminator bits, and padding
+    will be implemented in later versions.
     """
     if not isinstance(data, str):
         raise TypeError("data must be a string")

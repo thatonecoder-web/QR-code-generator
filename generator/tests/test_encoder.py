@@ -1,3 +1,5 @@
+import pytest
+
 from qr_generator.encoder import encode
 
 
@@ -27,9 +29,5 @@ def test_encode_empty_string():
 
 
 def test_encode_rejects_non_string():
-    try:
+    with pytest.raises(TypeError):
         encode(123)
-    except TypeError:
-        pass
-    else:
-        raise AssertionError("encode() should reject non-string input")
