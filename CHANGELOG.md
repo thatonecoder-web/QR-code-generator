@@ -1,5 +1,30 @@
 # Changelog
 
+## v0.1.4–v0.1.8 — Complete QR Generation Pipeline
+
+├─ Added QR version handling and capacity calculations
+├─ Added error-correction level support
+├─ Added data capacity validation and padding/terminator handling
+├─ Added alignment pattern generation
+├─ Added version-specific matrix construction
+├─ Improved reserved-module tracking and validation
+├─ Added QR format-information areas
+├─ Added all 8 QR mask patterns
+├─ Added mask application and penalty scoring
+├─ Added automatic best-mask selection
+├─ Integrated data encoding, error correction, and codeword interleaving
+├─ Integrated matrix placement, format information, and masking
+├─ Added complete end-to-end QR symbol generation
+├─ Added unified QR generation API
+├─ Added automatic QR version selection
+├─ Added configurable error-correction levels
+├─ Added real-world/scannable QR validation tests
+├─ Added expanded regression and integration test coverage
+├─ Updated `examples/basic.py` to demonstrate complete QR generation
+├─ Updated README and project documentation
+├─ developer sanity compromised...
+└─ Updated package version to 0.1.8
+
 ## v0.1.3 - Error Correction
 ├─ Added GF(256) arithmetic
 ├─ Added Reed-Solomon error correction

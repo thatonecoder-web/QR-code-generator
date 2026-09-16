@@ -23,18 +23,37 @@ The project is currently being built incrementally, with features being added an
 
 ## 🛠️ Planned Features
 
-* [ ] Basic QR matrix generation
+* [x] Basic QR matrix generation
 * [ ] Numeric encoding
 * [ ] Alphanumeric encoding
-* [ ] Byte/text encoding
-* [ ] Error correction
-* [ ] QR masking
-* [ ] Multiple QR versions
+* [x] Byte/text encoding
+* [x] Error correction
+* [x] QR masking
+* [x] Multiple QR versions (1-4)
 * [ ] PNG rendering
 * [ ] SVG rendering
 * [ ] Command-line interface
-* [ ] Automated tests
-* [ ] QR decoding compatibility tests
+* [x] Automated tests
+* [x] QR decoding compatibility tests
+
+## ✅ Current Capabilities
+
+QR-generator can now produce complete, scannable QR Code symbols end to end:
+
+* Byte-mode data encoding with terminator and padding
+* Versions 1-4, with automatic version selection based on data length
+* All four error-correction levels (L, M, Q, H)
+* Reed-Solomon error correction with codeword interleaving
+* Finder, separator, timing, and alignment patterns
+* Format information (BCH-encoded, both copies)
+* All 8 masking patterns with automatic penalty-based best-mask selection
+
+```python
+from qr_generator.generator import generate
+
+matrix = generate("Hello, QR-generator!", error_correction="M")
+print(matrix)
+```
 
 ## 📚 Why?
 
