@@ -1,14 +1,3 @@
-"""Integration and regression tests for the end-to-end QR pipeline.
-
-``test_generation_is_scannable`` below is the "real-world" validation:
-rather than depending on an external scanning library, it implements
-the QR Code decoding steps (bit extraction, unmasking, block
-de-interleaving, and error-correction verification) independently of
-the generator, and confirms the original text comes back out exactly.
-A pipeline that passes this test produces a matrix that is structured
-exactly the way a real QR scanner expects.
-"""
-
 import pytest
 
 from qr_generator import version_info
